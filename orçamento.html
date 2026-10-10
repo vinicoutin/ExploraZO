@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploraZO - Orçamento</title>
+
+    <!-- CSS compartilhado do grupo -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- CSS exclusivo desta página -->
+    <link rel="stylesheet" href="CSS/orcamento.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="imagens/explorazo.png" alt="Logo do ExploraZO" width="120">
+        <h1>ExploraZO</h1>
+        <a href="login.html" id="login">Login</a>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="orçamento.html">Orçamento</a>
+        <a href="sobre.html">Sobre</a>
+    </nav>
+
+    <main>
+
+        <!-- DESTINOS EM DESTAQUE -->
+        <section id="destinos">
+            <h2>Destinos em Destaque na Zona Oeste</h2>
+            <p class="introducao">
+                Descubra lugares incríveis para sua próxima aventura.
+            </p>
+
+            <div class="lista-destinos">
+
+                <figure class="destinos">
+                    <img src="imagens/telegrafo.jpg" alt="Vista da Pedra do Telégrafo">
+                    <figcaption>Pedra do Telégrafo</figcaption>
+                </figure>
+
+                <figure class="destinos">
+                    <img src="imagens/cachoeiramendanha.jpg" alt="Cachoeira do Mendanha">
+                    <figcaption>Cachoeira do Mendanha</figcaption>
+                </figure>
+
+                <figure class="destinos">
+                    <img src="imagens/caete.jpg" alt="Mirante do Caeté">
+                    <figcaption>Mirante do Caeté</figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        <!-- SERVIÇOS EM UMA ÚNICA SEÇÃO -->
+        <section id="experiencias">
+            <h2>Planeje sua próxima aventura</h2>
+            <p class="introducao">
+                Escolha os serviços que combinam com seu passeio pela Zona Oeste.
+            </p>
+
+            <div class="lista-servicos">
+
+                <article class="servico">
+                    <h3>Guias de trilha</h3>
+                    <p>
+                        Tenha orientação para explorar trilhas e aproveitar
+                        o contato com a natureza.
+                    </p>
+                    <span>Para trilhas e caminhadas</span>
+                </article>
+
+                <article class="servico">
+                    <h3>Consultoria de passeios</h3>
+                    <p>
+                        Receba ajuda para escolher destinos de acordo
+                        com suas preferências.
+                    </p>
+                    <span>Ajuda para planejar seu roteiro</span>
+                </article>
+
+                <article class="servico">
+                    <h3>Registro fotográfico</h3>
+                    <p>
+                        Conheça a possibilidade de registrar momentos
+                        especiais durante o passeio.
+                    </p>
+                    <span>Registre suas experiências</span>
+                </article>
+
+                <article class="servico">
+                    <h3>Agências de turismo</h3>
+                    <p>
+                        Explore opções de roteiros e passeios organizados
+                        por empresas de turismo.
+                    </p>
+                    <span>Opções de passeios organizados</span>
+                </article>
+
+            </div>
+
+            <p class="aviso-servicos">
+                A disponibilidade dos serviços dependerá dos profissionais
+                e parceiros cadastrados na plataforma.
+            </p>
+        </section>
+
+        <!-- FORMULÁRIO DE ORÇAMENTO -->
+        <section id="orcamento">
+            <h2>Monte seu pacote</h2>
+            <p class="introducao">
+                Conte como você quer viver essa experiência.
+            </p>
+
+            <form method="POST" action="#">
+
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input
+                        type="text"
+                        name="nomeusuario"
+                        id="nome"
+                        placeholder="Digite seu nome"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input
+                        type="email"
+                        name="emailusuario"
+                        id="email"
+                        placeholder="seuemail@exemplo.com"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="destino">Destino desejado:</label>
+                    <select id="destino" name="destino" required>
+                        <option value="" disabled selected>Escolha um destino</option>
+                        <option value="Pedra do Telégrafo">Pedra do Telégrafo</option>
+                        <option value="Parque Estadual da Pedra Branca">Parque Estadual da Pedra Branca</option>
+                        <option value="Cachoeira do Mendanha">Cachoeira do Mendanha</option>
+                        <option value="Mirante do Caeté">Mirante do Caeté</option>
+                        <option value="Pedra da Tartaruga">Pedra da Tartaruga</option>
+                        <option value="Açude do Camorim">Açude do Camorim</option>
+                        <option value="Praia do Perigoso">Praia do Perigoso</option>
+                        <option value="Pico da Pedra Branca">Pico da Pedra Branca</option>
+                        <option value="Pedra do Pontal">Pedra do Pontal</option>
+                        <option value="Pedra do Quilombo">Pedra do Quilombo</option>
+                        <option value="Pedra do Ponto">Pedra do Ponto</option>
+                        <option value="ajuda">Quero ajuda para escolher</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="data">Data desejada:</label>
+                    <input type="date" name="data" id="data" required>
+                </div>
+
+                <fieldset>
+                    <legend>Quantidade de pessoas</legend>
+
+                    <label class="opcao">
+                        <input type="radio" name="quantidade" value="1 pessoa" required>
+                        1 pessoa
+                    </label>
+
+                    <label class="opcao">
+                        <input type="radio" name="quantidade" value="2 a 4 pessoas">
+                        2 a 4 pessoas
+                    </label>
+
+                    <label class="opcao">
+                        <input type="radio" name="quantidade" value="5 ou mais pessoas">
+                        5 ou mais pessoas
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Serviços desejados</legend>
+
+                    <label class="opcao">
+                        <input type="checkbox" name="servicos[]" value="Guia de trilha">
+                        Guia de trilha
+                    </label>
+
+                    <label class="opcao">
+                        <input type="checkbox" name="servicos[]" value="Registro fotográfico">
+                        Registro fotográfico
+                    </label>
+
+                    <label class="opcao">
+                        <input type="checkbox" name="servicos[]" value="Consultoria para escolher o passeio">
+                        Consultoria de passeios
+                    </label>
+
+                    <label class="opcao">
+                        <input type="checkbox" name="servicos[]" value="Agência de turismo">
+                        Agência de turismo
+                    </label>
+                </fieldset>
+
+                <div class="campo">
+                    <label for="mensagem">Observações:</label>
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        rows="4"
+                        placeholder="Conte suas preferências para o passeio."
+                    ></textarea>
+                </div>
+
+                <button type="submit">Solicitar orçamento</button>
+
+                <p class="nota-formulario">
+                    Formulário demonstrativo para o projeto acadêmico.
+                    O envio real exige integração com um sistema de recebimento.
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <h2>Nossos canais de atendimento</h2>
+        <p>contatosexplorazo@gmail.com</p>
+        <p>(21) 93454-2234</p>
+        <p>Rua Francisco de Campos, 354, Campo Grande.</p>
+        <hr>
+        <p>&copy; 2026 ExploraZO. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

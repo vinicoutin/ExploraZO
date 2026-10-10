@@ -1,0 +1,160 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    padding: 20px;
+    flex-grow: 1;
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 8px 18px rgb(58, 58, 57);
+}
+header {
+    color: rgb(24, 153, 7);
+    font-size: 22px;
+    font-weight: bold;
+}
+header img {
+    left: 0%;
+    position: absolute;
+    top: 7px;
+    mix-blend-mode: multiply;
+}
+header h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    margin: 0;
+    padding: 29px;
+    margin-left: 90px;
+    margin-top: 16px;
+    text-shadow: 1px 1px 1px black;
+}
+a#login {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: rgb(24, 153, 7);
+    text-decoration: none;
+}
+nav {
+    text-align: left;
+    margin-left: 20px;
+    padding: 10px;
+    word-spacing: 60px;
+    font-size: 22px;
+}
+nav a {
+    color: rgb(24, 153, 7);
+    font-weight: bold;
+    text-decoration: none;
+}
+footer {
+    text-align: center;
+    color: white;
+    padding: 30px;
+    background-color: black;
+    letter-spacing: 1px;
+}
+section#historia {
+    padding: 100px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    font-size: 17px;
+}
+section#historia img {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+}
+section#proposito {
+    text-align: left;
+    padding: 100px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    font-size: 17px;
+    width: 1000px;
+}
+section#diferenciais {
+    text-align: left;
+    padding: 100px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    font-size: 17px;
+    width: 1000px;
+}
+section#contato {
+    text-align: center;
+    padding: 100px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    font-size: 17px;
+}
+section#destinos {
+    text-align: center;
+    font-size: 17px;
+}
+.destinos {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 1%;
+}
+.destinos img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.destinos-destaque {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.destinos-destaque img {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.centro {
+    text-align: center;
+}
+.lado {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+}
+input#nome, input#email, input#senha, input#telefone, input#nascimento, input#data, textarea#mensagem, select#destino {
+    width: 20%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button {
+    padding: 10px 20px;
+    background-color: rgb(24, 153, 7);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
